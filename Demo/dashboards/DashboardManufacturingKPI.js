@@ -1,4 +1,4 @@
-﻿var DashboardManufacturingKPI = {
+var DashboardManufacturingKPI = {
   "ReportVersion": "2021.3.4.0",
   "ReportGuid": "22ceabbd09da4dcb8be374fd2892eed8",
   "ReportName": "Manufacturing KPI",
