@@ -47,17 +47,17 @@
     <div id="designerDiv">
         <script>
             openInViewerButton.style.display = 'none';
-            designerDiv.style.display = 'none';
             designer.renderHtml();
+            designerDiv.style.display = 'none';
         </script>
     </div>
     <script>
         function openInDesigner() {
             openInDesignerButton.style.display = 'none';
             openInViewerButton.style.display = 'block';
-            designer.report = viewer.report;
             designerDiv.style.display = 'block';
             viewerDiv.style.display = 'none';
+            designer.report = viewer.report;
         }
 
         function openInViewer() {
