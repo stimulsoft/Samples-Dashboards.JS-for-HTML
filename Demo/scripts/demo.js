@@ -72,7 +72,7 @@ function createDashboardButtons() {
             category: "KPI Dashboards",
             dashboards: {
                 "DashboardManufacturingKPI": "Manufacturing KPI",
-				"DashboardHospitalPerfomance": "Hospital Perfomance",
+				"DashboardHospitalPerformance": "Hospital Performance",
 				"DashboardSaaSMetrics": "SaaS Metrics",              				
 				"DashboardPersonalPageStatistic": "Personal Page Statistic",
 				"DashboardPopulationInternetAndMobileUsers": "Population, Internet and Mobile Users",
@@ -105,7 +105,7 @@ function createDashboardButtons() {
             category: "Social Dashboards",
             dashboards: {
                 "DashboardChristmas": "Christmas",
-				"DashboardFastFoodLanch": "Fast Food Lanch",
+				"DashboardFastFoodLunch": "Fast Food Lunch",
                 "DashboardGlobalInternetUsage": "Global Internet Usage",
                 "DashboardPopulationByState": "Population By State"
             }

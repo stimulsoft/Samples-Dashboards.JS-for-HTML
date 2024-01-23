@@ -1,6 +1,5 @@
 var DashboardSiteStatistics = {
-
-  "ReportVersion": "2020.5.2.0",
+  "ReportVersion": "2024.1.3.0",
   "ReportGuid": "9b939455071741f39cf452319b514585",
   "ReportName": "DashboardSiteStatistics",
   "ReportAlias": "DashboardSiteStatistics",
@@ -20,7 +19,11 @@ var DashboardSiteStatistics = {
       "BackColor": "10,50,90",
       "GlyphColor": "22,93,158",
       "ForeColor": "221,221,221",
-      "HotBackColor": "10,50,90"
+      "HotBackColor": "10,50,90",
+      "ToolTipBrush": "solid:White",
+      "ToolTipTextBrush": "solid:Black",
+      "ToolTipCornerRadius": "0,0,0,0",
+      "ToolTipBorder": ";;;;"
     }
   },
   "ReferencedAssemblies": {
@@ -183,16 +186,12 @@ var DashboardSiteStatistics = {
             "Right": 0.0,
             "Bottom": 0.0
           },
-          "Padding": {
-            "Left": 0.0,
-            "Top": 0.0,
-            "Right": 0.0,
-            "Bottom": 0.0
-          },
           "Border": ";;;;",
           "AltClientRectangle": "0,0,480,40",
           "AltTitleVisible": false,
           "Text": "<font face=\"Arial\" size=\"36\"><text-align=\"Left\"><font-color=\"#DDDDDD\">Count & Conversion</font-color></text-align></font>",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;",
           "Title": {
             "Text": "Text",
             "Visible": false
@@ -220,8 +219,17 @@ var DashboardSiteStatistics = {
           "TextFormat": {
             "Ident": "StiNumberFormatService",
             "NegativePattern": 1,
+            "DecimalDigits": 2,
             "GroupSeparator": ",",
             "State": "DecimalDigits, Abbreviation"
+          },
+          "TargetFormat": {
+            "Ident": "StiPercentageFormatService",
+            "NegativePattern": 1,
+            "DecimalDigits": 2,
+            "GroupSeparator": ",",
+            "PositivePattern": 1,
+            "Symbol": "%"
           },
           "Value": {
             "Ident": "ValueIndicatorMeter",
@@ -237,7 +245,9 @@ var DashboardSiteStatistics = {
           "Font": ";13;;",
           "Style": "Custom",
           "CustomStyleName": "Indicator",
-          "Icon": "Users"
+          "Icon": "Users",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;"
         },
         "2": {
           "Ident": "StiIndicatorElement",
@@ -255,8 +265,17 @@ var DashboardSiteStatistics = {
           "TextFormat": {
             "Ident": "StiNumberFormatService",
             "NegativePattern": 1,
+            "DecimalDigits": 2,
             "GroupSeparator": ",",
             "State": "DecimalDigits, Abbreviation"
+          },
+          "TargetFormat": {
+            "Ident": "StiPercentageFormatService",
+            "NegativePattern": 1,
+            "DecimalDigits": 2,
+            "GroupSeparator": ",",
+            "PositivePattern": 1,
+            "Symbol": "%"
           },
           "Value": {
             "Ident": "ValueIndicatorMeter",
@@ -272,7 +291,9 @@ var DashboardSiteStatistics = {
           "Font": ";13;;",
           "Style": "Custom",
           "CustomStyleName": "Indicator",
-          "Icon": "ManWoman"
+          "Icon": "ManWoman",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;"
         },
         "3": {
           "Ident": "StiChartElement",
@@ -302,11 +323,16 @@ var DashboardSiteStatistics = {
             "Ident": "Chart",
             "OnHover": "ShowToolTip",
             "OnClick": "ApplyFilter",
-            "HyperlinkDestination": "NewTab"
+            "HyperlinkDestination": "NewTab",
+            "ViewsState": "OnHover"
           },
           "Title": {
             "Text": "Repeats",
             "Font": ";15.75;;"
+          },
+          "ManuallyEnteredChartMeter": {
+            "Ident": "ValueChartMeter",
+            "Key": "b6cd82301caf4fa38f868b7d12be28ac"
           },
           "ArgumentFormat": {
             "Ident": "StiNumberFormatService",
@@ -319,23 +345,27 @@ var DashboardSiteStatistics = {
             "Ident": "StiGeneralFormatService"
           },
           "Area": {
+            "SideBySide": true,
             "GridLinesHor": {
-              "Color": "Transparent",
               "Visible": true
             },
-            "GridLinesVert": {
-              "Color": "Transparent"
-            },
-            "InterlacingHor": {
-              "Color": "Transparent"
-            },
-            "InterlacingVert": {
-              "Color": "Transparent"
+            "Indicator": {
+              "Value": {
+                "Color": "Transparent"
+              },
+              "Title": {
+                "Color": "Transparent"
+              }
             }
           },
           "Labels": {
             "Position": "Center"
-          }
+          },
+          "Options3D": {
+            "Lighting": "Gradient"
+          },
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;"
         },
         "4": {
           "Ident": "StiChartElement",
@@ -392,11 +422,16 @@ var DashboardSiteStatistics = {
             "Ident": "Chart",
             "OnHover": "ShowToolTip",
             "OnClick": "ApplyFilter",
-            "HyperlinkDestination": "NewTab"
+            "HyperlinkDestination": "NewTab",
+            "ViewsState": "OnHover"
           },
           "Title": {
             "Text": "Dwell",
             "Font": ";15.75;;"
+          },
+          "ManuallyEnteredChartMeter": {
+            "Ident": "ValueChartMeter",
+            "Key": "9fc80aee77914f498bf72c7552aab6a1"
           },
           "ArgumentFormat": {
             "Ident": "StiNumberFormatService",
@@ -413,23 +448,27 @@ var DashboardSiteStatistics = {
             "State": "DecimalDigits"
           },
           "Area": {
+            "SideBySide": true,
             "GridLinesHor": {
-              "Color": "Transparent",
               "Visible": true
             },
-            "GridLinesVert": {
-              "Color": "Transparent"
-            },
-            "InterlacingHor": {
-              "Color": "Transparent"
-            },
-            "InterlacingVert": {
-              "Color": "Transparent"
+            "Indicator": {
+              "Value": {
+                "Color": "Transparent"
+              },
+              "Title": {
+                "Color": "Transparent"
+              }
             }
           },
           "Labels": {
             "Position": "Center"
-          }
+          },
+          "Options3D": {
+            "Lighting": "Gradient"
+          },
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;"
         }
       },
       "Style": "DarkBlue",
