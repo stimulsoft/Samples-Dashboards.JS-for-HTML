@@ -28,28 +28,34 @@
         function onEditClick() {
             // Evalute code
             eval(codeString.value);
-            // Assign dashboard to the viewer
-            viewer.report = report;
 
             if (!designer) {
                 // Set full screen mode for the designer
-                var options = new Stimulsoft.Designer.StiDesignerOptions();
-                options.appearance.fullScreenMode = true;
-
+                var designerOptions = new Stimulsoft.Designer.StiDesignerOptions();
+                designerOptions.appearance.fullScreenMode = true;
+                
                 // Create the dashboard designer with specified options
-                designer = new Stimulsoft.Designer.StiDesigner(options, "StiDesigner", false);
+                designer = new Stimulsoft.Designer.StiDesigner(designerOptions, "StiDesigner", false);
 
                 // Add the exit menu item event
+                designerOptions.toolbar.showFileMenuExit = true;
                 designer.onExit = function (e) {
                     designer.visible = false;
+                    viewer.visible = true;
+
+                    // Assign dashboard to the viewer
+                    report = designer.report;                    
+                    viewer.report = report;
+                    
                 }
 
                 // Show the dashboard designer
                 designer.renderHtml("designerContent");
             }
-            else {
-                designer.visible = true;
-            }
+           
+            designer.visible = true;
+            viewer.visible = false;
+
             // Assign dashboard to the designer
             designer.report = viewer.report;
         }
@@ -80,7 +86,7 @@
 
     <br><br>
 
-    <div>
+    <div style="width: 1000px">
         <script type="text/javascript">
             // Show the dashboard viewer in this place
             viewer.renderHtml();
