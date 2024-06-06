@@ -16,7 +16,7 @@ A set of examples for working with Dashboards:
 * [Editing a Dashboard Template and Showing it in the Dashboard Viewer](https://github.com/stimulsoft/Samples-Dashboards.JS-for-HTML/blob/main/Working%20with%20Dashboard/Editing%20a%20Dashboard%20Template%20and%20Showing%20it%20in%20the%20Dashboard%20Viewer.html)
 * [Exporting a Dashboard from Code](https://github.com/stimulsoft/Samples-Dashboards.JS-for-HTML/blob/main/Working%20with%20Dashboard/Exporting%20a%20Dashboard%20from%20Code.html)
 * [Loading Scripts in Part to Minify Project](https://github.com/stimulsoft/Samples-Dashboards.JS-for-HTML/blob/main/Working%20with%20Dashboard/Loading%20Scripts%20in%20Part%20to%20Minify%20Project.html)
-* [Localization th Designer](https://github.com/stimulsoft/Samples-Dashboards.JS-for-HTML/blob/main/Working%20with%20Dashboard/Localization%20the%20Designer.html)
+* [Localization the Designer](https://github.com/stimulsoft/Samples-Dashboards.JS-for-HTML/blob/main/Working%20with%20Dashboard/Localization%20the%20Designer.html)
 * [Registering a Data for Dashboard Template](https://github.com/stimulsoft/Samples-Dashboards.JS-for-HTML/blob/main/Working%20with%20Dashboard/Registering%20a%20Data%20for%20Dashboard%20Template.html)
 * [Registering a JSON Data for the Dashboard Template](https://github.com/stimulsoft/Samples-Dashboards.JS-for-HTML/blob/main/Working%20with%20Dashboard/Registering%20a%20JSON%20Data%20for%20the%20Dashboard%20Template.html)
 * [Showing the Dashboard Designer Immediately after Running an App](https://github.com/stimulsoft/Samples-Dashboards.JS-for-HTML/blob/main/Working%20with%20Dashboard/Showing%20the%20Dashboard%20Designer%20Immediately%20after%20Running%20an%20App.html)
