@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/stimulsoft-dashboards-js/Scripts/stimulsoft.reports.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/stimulsoft-dashboards-js/Scripts/stimulsoft.dashboards.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/stimulsoft-dashboards-js/Scripts/stimulsoft.designer.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/stimulsoft-dashboards-js/Scripts/stimulsoft.viewer.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/stimulsoft-dashboards-js/Scripts/stimulsoft.blockly.editor.js"
+        ></script>
+        <script type="text/javascript">
+            function onLoad() {
+                var report = new Stimulsoft.Report.StiReport();
+                report.loadFile('../dashboard/Christmas.mrt');
+
+                var designer = new Stimulsoft.Designer.StiDesigner();
+                designer.renderHtml('content');
+                designer.report = report;
+            }
+        </script>
+        <title>Report Designer</title>
+    </head>
+    <body onload="onLoad()">
+        <div id="content"></div>
+    </body>
+</html>
